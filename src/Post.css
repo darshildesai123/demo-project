@@ -1,0 +1,54 @@
+.poster {
+  width: 40%;
+  height: 60vh;
+}
+
+.main {
+  display: flex;
+  padding: 50px;
+}
+
+.content {
+  text-align: justify;
+  width: 50%;
+  padding-left: 50px;
+}
+
+.btn1 {
+  width: 150px;
+  height: 37px;
+  /* background-color: black;*/
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background: darkblue;
+  background-image: linear-gradient(
+    to right,
+    rgba(25, 100, 90, 0),
+    rgb(17, 45, 41)
+  );
+}
+.btn2 {
+  width: 150px;
+  height: 37px;
+  margin-left: 10px;
+  background: darkblue;
+  background-image: linear-gradient(
+    to left,
+    rgba(25, 100, 90, 0),
+    rgb(17, 45, 41)
+  );
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+button{
+  background-color: black;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 43px;
+  margin-top: 10px;
+  box-shadow: 5px 3px 7px 1px gray;
+}
