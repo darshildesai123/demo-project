@@ -1,3 +1,28 @@
+.box{
+  width: 30%;
+  border:  1px solid black;
+  border-radius: 20px;
+  float: right;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  position: fixed;
+  background-color: rgb(196, 250, 196);
+  color: green;
+  top: 10px;
+  right: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.icons{
+  /* margin-left: 100px; */
+  /* float: inline-end; */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
 .App{
   text-align: center;
 }
