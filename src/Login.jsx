@@ -1,5 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Form, useNavigate } from "react-router-dom";
+import { styled } from "styled-components";
 
 function Login() {
   const navigate = useNavigate();
@@ -12,17 +13,19 @@ function Login() {
   return (
     <>
       <h1>Login</h1>
-      <form onSubmit={onSubmit}>
-        <label>Username:</label>
-        <input type="text" placeholder="Enter Username"></input>
-        <br />
-        <label>Password:</label>
-        <input type="password" placeholder="Enter password"></input>
-        <br />
-        <button type="submit">Submit</button>
-      </form>
+      <Form>
+        {/* <InputField type="text" placeholder="Enter Username"></InputField>
+        <InputField type="password" placeholder="Enter password"></InputField> */}
+        {/* <button type="submit">Submit</button> */}
+      </Form>
     </>
   );
 }
-
 export default Login;
+
+// const Form = styled.form`
+//   width:40%;
+//   margin:0 auto;
+  
+// `
+

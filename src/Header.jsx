@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 import { ThemeContext } from "./ThemeProvider";
 import { FaMoon, FaSun } from "react-icons/fa";
+import { Context } from "./globalContext";
 
 function Header() {
+  const globalContext= useContext(Context);
   const theme = useContext(ThemeContext);
   const [tab, setTeb] = useState("home");
   return (
@@ -34,13 +36,24 @@ function Header() {
           
           <li><Link onClick={()=> theme.setMode(theme.mode==='dark'? 'light' : 'dark')} style={{color:'#212530'}}> <FaMoon /></Link></li>
         } */}
+        <SearchField type="search" onChange={(e)=> globalContext.setSearchText(e.target.value)} placeholder="Search Here" />
         <Colorwrapper>
-          <Color></Color>
+          <Color onClick={()=> theme.setMode('red')} bgcolor={'red'}></Color>
+          <Color onClick={()=> theme.setMode('blue')} bgcolor={'blue'}></Color>
+          <Color onClick={()=> theme.setMode('green')} bgcolor={'green'}></Color>
+          <Color onClick={()=> theme.setMode('cyan')} bgcolor={'cyan'}></Color>
         </Colorwrapper>
       </ul>
     </Nav>
   );
 }
+
+const SearchField = styled.input`
+  ${'' /* height:40px; */}
+  margin:0;
+  width:300px;
+  padding-left:10px;
+`
 
 const Colorwrapper = styled.div`
   position: fixed;
@@ -51,9 +64,11 @@ const Colorwrapper = styled.div`
 `
 
 const Color = styled.div`
-  background-color: ${(props)=> props.color} ;
+  background-color: ${(props)=> props.bgcolor} ;
   height: 30px;
   width: 30px;
+  border-radius:100%;
+  border:2px solid white;
 `
 
 const Nav = styled.nav`
