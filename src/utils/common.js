@@ -50,12 +50,12 @@ export const blogs=[
     },
     {
         title:'What is a lifestyle blog?',
-        src:'https://tse3.mm.bing.net/th?id=OIP.p3Th8G4tW6DXnVZA0x9ctwHaEK&pid=Api&P=0&h=180',
+        src:'https://tse1.mm.bing.net/th?id=OIP.AwJOaYFiahba6dIZOnGSMgHaE8&pid=Api&P=0&h=180',
         desc:'A lifestyle blog is a digital compilation of an authors personal interests, daily activities, or opinions on a subject. A lifestyle blog typically covers multiple hobbies or talents of the writer, rather than focusing on one subject alone. For instance, a lifestyle blog might include a section for fashion, health and wellness, travel, and relationships. A lifestyle blog is often highly personalized, so it can often feel like youre reading a friend curated journal entries.'
     },
     {
         title:'What is a blog used for?',
-        src:'https://tse1.mm.bing.net/th?id=OIP.AwJOaYFiahba6dIZOnGSMgHaE8&pid=Api&P=0&h=180',
+        src:'https://tse3.mm.bing.net/th?id=OIP.p3Th8G4tW6DXnVZA0x9ctwHaEK&pid=Api&P=0&h=180',
         desc:'A wiki is a collaborative space where anyone who visits the site can edit, share, or publish content -- Wikipedia is one of the most popular examples of this. On the other hand, there is typically only one person, or a team of people, with admin permissions to edit, share, or publish to a blog. Website visitors who come across the blog can potentially leave comments at the bottom of the blog post, but they cannot publish to the site or edit the posted material.'
     },
     {

@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 import { blogs } from "./utils/common";
 import { Context } from "./globalContext";
 import useDebounce from "./utils/DeboucedValue";
+import AdvancedExample from "./Bootstrap/Pegination";
 
 function Blogs() {
   const context = useContext(Context);
@@ -40,9 +41,11 @@ function Blogs() {
             )
         )}
       </Container>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <AdvancedExample />
+      </div>
     </>
   );
-  
 }
 
 const BlogWrapper = styled.div`
